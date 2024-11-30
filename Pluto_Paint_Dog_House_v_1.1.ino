@@ -1,5 +1,5 @@
 /* 
-  IR Breakbeam sensor demo! - https://learn.adafruit.com/ir-breakbeam-sensors/arduino
+  IR Breakbeam sensor - https://learn.adafruit.com/ir-breakbeam-sensors/arduino
 */
 #include <Adafruit_NeoPixel.h>
 #ifdef __AVR__
@@ -11,14 +11,14 @@
 
 Adafruit_DRV2605 drv;
 
-// Which pin on the Arduino is connected to the NeoPixels?
+// NeoPixels pins
 #define BRUSH_LED_PIN1        5 // On Trinket or Gemma, suggest changing this to 1
 #define BRUSH_LED_PIN2        6 // On Trinket or Gemma, suggest changing this to 1
 #define YELLOW_LED_PIN        9 // On Trinket or Gemma, suggest changing this to 1
 #define BLUE_LED_PIN        10 // On Trinket or Gemma, suggest changing this to 1
 #define RED_LED_PIN       11 // On Trinket or Gemma, suggest changing this to 1
 
-// How many NeoPixels are attached to the Arduino?
+// NeoPixels attached to the Arduino
 #define NUM_RING_PIXELS 12 // Popular NeoPixel ring size
 #define NUM_STRIP_PIXELS 90 // Popular NeoPixel ring size
 
@@ -41,7 +41,7 @@ Adafruit_NeoPixel pixels5(NUM_STRIP_PIXELS, RED_LED_PIN, NEO_GRB + NEO_KHZ800);
   // Pin  6: Teensy++ 2.0 has the LED on pin 6
   // Pin 13: Teensy 3.0 has the LED on pin 13
 
-
+// IR Breakbeam sensor pins
 #define YELLOW_SENSOR_PIN 4
 #define BLUE_SENSOR_PIN 12
 #define RED_SENSOR_PIN 7
